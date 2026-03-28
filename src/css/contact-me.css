@@ -1,0 +1,89 @@
+.contact-me {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  height: 100%;
+  background-image: url("/imgs/lines-bg.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-me .top-titles .mini-title {
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #8c8c8ce3;
+  font-weight: 700;
+  position: relative;
+  display: inline-flex;
+  gap: 10px; /* المسافة 10px بين الدوت والكلام */
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+.contact-me .top-titles {
+  color: #2f2f2f;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+.contact-me .top-titles h1 {
+  text-transform: capitalize;
+  font-size: 55px;
+  font-weight: 500;
+}
+.contact-me .social-card {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  height: 170px;
+  margin-top: 20px;
+}
+.contact-me .social-card h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.contact-me .social-card .social-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+}
+
+.contact-me .social-card .link svg .contact-me .social-card:hover .link svg {
+  fill: #8cff2e;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .contact-me .top-titles h1 {
+    font-size: 38px;
+  }
+  .contact-me .social-card {
+    height: 140px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-me .top-titles {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .contact-me .top-titles .mini-title {
+    font-size: 12px;
+  }
+  .contact-me .top-titles h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-me {
+    padding: 30px 0;
+  }
+  .contact-me .top-titles .mini-title {
+    font-size: 12px;
+  }
+  .contact-me .top-titles h1 {
+    font-size: 34px;
+  }
+}

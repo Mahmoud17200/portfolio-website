@@ -1,0 +1,49 @@
+.projects-page .project-links {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.projects-page .project-links .github-link {
+  margin-right: 14px;
+}
+.projects-page .project-links .github-link svg,
+.project-links .live-demo-link svg {
+  color: #bac0ca;
+  margin-right: 5px;
+}
+.projects-page .project-links .github-link span,
+.projects-page .project-links .live-demo-link span {
+  color: #bac0ca;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.projects-page .projects .project-sec .project-card {
+  border: 1px solid #47474775;
+}
+.projects-page .projects .project-sec .project-card .card-img {
+  height: 400px;
+}
+
+@media (max-width: 1200px) {
+  .projects-page .projects .project-sec .project-card .card-img {
+    height: 340px;
+  }
+}
+@media (max-width: 992px) {
+  .projects-page .projects .project-sec .project-card .card-img {
+    height: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .projects-page .projects .project-sec .project-card .card-img {
+    height: 280px;
+  }
+}
+@media (max-width: 576px) {
+  .projects-page .projects .project-sec .project-card .card-img {
+    height: 260px;
+  }
+  .projects .project-sec .project-card .card-body h3 {
+    font-size: 18px;
+  }
+}
