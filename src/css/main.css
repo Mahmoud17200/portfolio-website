@@ -113,38 +113,6 @@
   animation-delay: 0.3s;
   display: inline-block;
 }
-.bio-ani {
-  animation-duration: 0.8s;
-  animation-delay: 1.9s;
-  display: inline-block;
-}
-.the-door-ani {
-  animation-duration: 0.7s;
-  animation-delay: 1.9s;
-  display: inline-block;
-}
-
-.hero-sec .right-side h1 .ele2 {
-  animation-delay: 0.2s;
-}
-.hero-sec .right-side h1 .ele2 {
-  animation-delay: 0.4s;
-}
-.hero-sec .right-side h1 .ele3 {
-  animation-delay: 0.7s;
-}
-.hero-sec .right-side h1 .ele4 {
-  animation-delay: 1s;
-}
-.hero-sec .right-side h1 .ele5 {
-  animation-delay: 1.3s;
-}
-.hero-sec .right-side h1 .ele6 {
-  animation-delay: 1.7s;
-}
-.hero-sec .right-side h1 .ele7 {
-  animation-delay: 1.9s;
-}
 
 @keyframes fadeInDown {
   from {
