@@ -1,9 +1,11 @@
 import React from "react";
 import Navbar from "../Navbar";
-import "animate.css";
 import { Link } from "react-router-dom";
 
+import "animate.css";
 import "/src/css/main.css";
+import "animate.css/animate.min.css";
+
 import ToolSec from "./Tool-Sec";
 import MyProjects from "./MyProjects";
 import ContactMe from "./ContactMe";

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "/src/css/myProjects.css";
-
+import "animate.css";
+import "animate.css/animate.min.css";
 import projects from "../../data/projects-api";
 import { Link } from "react-router-dom";
 

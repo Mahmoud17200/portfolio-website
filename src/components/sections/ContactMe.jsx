@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "/src/css/contact-me.css";
 import { Link } from "react-router-dom";
+import "animate.css";
+import "animate.css/animate.min.css";
 
 function ContactMe() {
   let [color] = useState([

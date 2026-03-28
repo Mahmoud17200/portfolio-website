@@ -1,5 +1,7 @@
 import React from "react";
+import "/src/css/main.css";
 import "animate.css";
+import "animate.css/animate.min.css";
 import "../../css/toolSec.css";
 
 function ToolSec() {
