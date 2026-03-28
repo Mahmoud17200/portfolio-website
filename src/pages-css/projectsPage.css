@@ -1,3 +1,42 @@
+.fade-up-custom {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s ease;
+}
+.fade-up-custom.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-down-custom {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1.2s ease;
+}
+.fade-down-custom.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-left-custom {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 1.2s ease;
+}
+.fade-left-custom.aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right-custom {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s ease;
+}
+.fade-right-custom.aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
 .projects-page .project-links {
   padding: 20px 0;
   display: flex;

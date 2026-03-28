@@ -1,25 +1,37 @@
-import React, { useState } from "react";
-import MyProjects from "../sections/MyProjects";
+import React, { useEffect, useState } from "react";
 import projects from "../../data/projects-api";
-
 import "/src/pages-css/projectsPage.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ProjectsPage() {
   const [activeId, setActiveId] = useState(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 80,
+    });
+  }, []);
 
   return (
     <div className="projects-page">
       <div className="projects">
         <div className="container-fluid top-titles">
           <p
-            style={{ animationDelay: ".4s" }}
-            className="dot mini-title wow animate__animated animate__fadeInUp"
+            className="dot mini-title fade-down-custom"
+            data-aos="fade-down"
+            data-aos-duration="1200"
+            data-aos-delay="300"
           >
             [01] - Featured projects
           </p>
           <h1
-            style={{ animationDelay: ".7s" }}
-            className="wow animate__animated animate__fadeInUp"
+            className="fade-up-custom"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
           >
             I blend creativity with technical expertise
           </h1>
@@ -31,7 +43,10 @@ function ProjectsPage() {
                 return (
                   <div
                     key={project.id}
-                    className="m-auto mb-lg-4 mb-lg-3 mb-sm-2 col-lg-8 col-md-8 col-sm-12"
+                    className="m-auto mb-lg-4 mb-lg-3 mb-sm-2 col-lg-8 col-md-8 col-sm-12 fade-down-custom"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    data-aos-delay="300"
                   >
                     <div
                       className={`project-card ${activeId === project.id ? "active-preview" : ""}`}

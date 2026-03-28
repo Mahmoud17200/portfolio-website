@@ -1,20 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "/src/css/main.css";
-import "animate.css";
-import "animate.css/animate.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../../css/toolSec.css";
 
 function ToolSec() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
     <div style={{ backgroundColor: "#141414" }} className="tool-sec">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-12 col-sm-12">
             <div className="left-side">
-              <p className="dot mini-title bottom-line wow animate__animated animate__fadeInDown def-ani def-ani1">
+              <p className="dot mini-title bottom-line fade-down-custom"
+                data-aos="fade-down"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
                 [02]-tools & skills
               </p>
-              <h1 className="wow animate__animated animate__fadeInUp def-ani2">
+              <h1 className="fade-up-custom"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
                 my frontend toolbox
               </h1>
             </div>
@@ -24,7 +41,11 @@ function ToolSec() {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                    <div className="skill wow animate__animated animate__fadeInUp def-ani3">
+                    <div className="skill fade-left-custom"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      data-aos-delay="300"
+                    >
                       <div className="container">
                         <div className="row">
                           <div className="col-lg-3 col-md-4 col-sm-12">
@@ -69,7 +90,11 @@ function ToolSec() {
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                    <div className="skill wow animate__animated animate__fadeInUp def-ani4">
+                    <div className="skill fade-right-custom"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="300"
+                    >
                       <div className="container">
                         <div className="row">
                           <div className="col-lg-3 col-md-4 col-sm-12">
@@ -118,7 +143,11 @@ function ToolSec() {
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                    <div className="skill wow animate__animated animate__fadeInUp def-ani5">
+                    <div className="skill fade-left-custom"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      data-aos-delay="300"
+                    >
                       <div className="container">
                         <div className="row">
                           <div className="col-lg-3 col-md-4 col-sm-12">
@@ -167,7 +196,11 @@ function ToolSec() {
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                    <div className="skill wow animate__animated animate__fadeInUp def-ani6">
+                    <div className="skill fade-right-custom"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="300"
+                    >
                       <div className="container">
                         <div className="row">
                           <div className="col-lg-3 col-md-4 col-sm-12">
@@ -216,7 +249,11 @@ function ToolSec() {
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                    <div className="skill wow animate__animated animate__fadeInUp def-ani7">
+                    <div className="skill fade-left-custom"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      data-aos-delay="300"
+                    >
                       <div className="container">
                         <div className="row">
                           <div className="col-lg-3 col-md-4 col-sm-12">

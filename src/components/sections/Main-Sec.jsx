@@ -31,17 +31,17 @@ export default function MainSec() {
                     <div className="img-col col-lg-4">
                       <img
                         src="/my-photos/1.jpeg"
-                        alt=""
-                        data-aos="fade-up"
-                        data-aos-delay="200"
+                        className="fade-down-custom"
+                        data-aos="fade-down"
+                        data-aos-delay="400"
                       />
                     </div>
 
                     <div className="info-col col-lg-8">
                       <div
-                        className="details"
-                        data-aos="fade-left"
-                        data-aos-delay="500"
+                        className="details ele1 fade-up-custom"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
                       >
                         <h4 className="name">Mahmoud Ali</h4>
                         <p>
@@ -69,26 +69,26 @@ export default function MainSec() {
                 <div className="row">
                   <div className="right-side">
                     <h4
-                      className="title-ani dot"
-                      data-aos="fade-left"
-                      data-aos-delay="300"
+                      className="title-ani dot fade-right-custom"
+                      data-aos="fade-right"
+                      data-aos-delay="600"
                     >
                       Available for freelance
                     </h4>
 
                     <h1>
                       <span
-                        className="ele ele1"
+                        className="ele ele1 fade-up-custom"
                         data-aos="fade-up"
-                        data-aos-delay="0"
+                        data-aos-delay="800"
                       >
                         Hi! I'm
                       </span>
 
                       <span
-                        className="name marked ele ele2"
+                        className="name marked ele ele2 fade-down-custom"
                         data-aos="fade-down"
-                        data-aos-delay="200"
+                        data-aos-delay="400"
                       >
                         Mahmoud Ali
                       </span>
@@ -96,7 +96,7 @@ export default function MainSec() {
                       <br />
 
                       <span
-                        className="ele ele3"
+                        className="ele ele3 fade-up-custom"
                         data-aos="fade-up"
                         data-aos-delay="700"
                       >
@@ -104,7 +104,7 @@ export default function MainSec() {
                       </span>
 
                       <span
-                        className="ele ele4"
+                        className="ele ele4 fade-up-custom"
                         data-aos="fade-up"
                         data-aos-delay="1000"
                       >
@@ -112,7 +112,7 @@ export default function MainSec() {
                       </span>
 
                       <span
-                        className="ele ele5"
+                        className="ele ele5 fade-up-custom"
                         data-aos="fade-up"
                         data-aos-delay="1300"
                       >
@@ -120,7 +120,7 @@ export default function MainSec() {
                       </span>
 
                       <span
-                        className="city marked ele ele6"
+                        className="city marked ele ele6 fade-left-custom"
                         data-aos="fade-left"
                         data-aos-delay="1700"
                       >
@@ -128,7 +128,7 @@ export default function MainSec() {
                       </span>
 
                       <span
-                        className="ele ele7"
+                        className="ele ele7 fade-up-custom"
                         data-aos="fade-up"
                         data-aos-delay="1900"
                       >
@@ -137,7 +137,7 @@ export default function MainSec() {
                     </h1>
 
                     <p
-                      className="bio"
+                      className="bio fade-up-custom"
                       data-aos="fade-up"
                       data-aos-delay="1900"
                     >
@@ -149,9 +149,10 @@ export default function MainSec() {
 
                     <div className="btn-sec">
                       <button
-                        className="btn d-flex align-center the-door"
-                        data-aos="fade-left"
-                        data-aos-delay="1900"
+                        className="btn d-flex align-center the-door fade-up-custom"
+                        data-aos="fade-up"
+                        data-aos-duration="4200"
+                        data-aos-delay="2400"
                       >
                         <Link to="/projects">see what i can do</Link>
                         <img src="/svg/arrow-icon.svg" alt="" />

@@ -47,7 +47,7 @@ ol {
   padding-left: 0px;
 }
 
-p{
+p {
   margin-bottom: 0rem;
 }
 
@@ -87,6 +87,17 @@ p{
 }
 
 
+/* .fade-up-custom { opacity: 0; transform: translateY(30px); transition: all 2s ease; }
+.fade-up-custom.aos-animate { opacity: 1; transform: translateY(0); }
+
+.fade-down-custom { opacity: 0; transform: translateY(30px); transition: all 2s ease; }
+.fade-down-custom.aos-animate { opacity: 1; transform: translateY(0); }
+
+.fade-left-custom { opacity: 0; transform: translateX(-30px); transition: all 2s ease; }
+.fade-left-custom.aos-animate { opacity: 1; transform: translateX(0); }
+
+.fade-right-custom { opacity: 0; transform: translateX(30px); transition: all 2s ease; }
+.fade-right-custom.aos-animate { opacity: 1; transform: translateX(0); } */
 
 
 /* media points */

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "/src/css/contact-me.css";
 import { Link } from "react-router-dom";
-import "animate.css";
-import "animate.css/animate.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ContactMe() {
   let [color] = useState([
@@ -43,6 +43,15 @@ function ContactMe() {
       src: "/icons/github.png",
     },
   ]);
+
+    useEffect(() => {
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 80,
+      });
+    }, []);
+
   return (
     <div className="contact-me">
       <div className="container">
@@ -51,13 +60,19 @@ function ContactMe() {
             <div className="top-titles">
               <h4
                 style={{ animationDelay: ".3s" }}
-                className="mini-title dot wow animate__animated animate__fadeInDown"
+                className="mini-title dot fade-down-custom"
+                data-aos="fade-down"
+                data-aos-duration="1200"
+                data-aos-delay="300"
               >
                 [03] - Contact Me
               </h4>
               <h1
                 style={{ animationDelay: ".5s" }}
-                className="wow animate__animated animate__fadeInUp"
+                className="fade-up-custom"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="300"
               >
                 my social media profiles
               </h1>
@@ -68,18 +83,25 @@ function ContactMe() {
         <div className="container">
           <div className="row">
             {color.map((item, index) => (
-              <div key={index} className="col-lg-4 col-md-6 col-sm-12">
+              <div key={index} className="col-lg-4 col-md-6 col-sm-12 fade-left-custom"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
                 <a href={`${links[index].link}`} target="_blank">
                   <div
                     style={{
                       animationDelay: `${0.8 + index * 0.2}s`,
                       background: `linear-gradient(120deg, ${item.mainColor}, ${item.secondaryColor})`,
                     }}
-                    className="social-card wow animate__animated animate__fadeInUp"
+                    className="social-card"
                   >
                     <h4 style={{ color: "#fff" }}>{links[index].name}</h4>
 
-                    <img className="social-icon" src={`${socialIcon[index].src}`} />
+                    <img
+                      className="social-icon"
+                      src={`${socialIcon[index].src}`}
+                    />
                   </div>
                 </a>
               </div>

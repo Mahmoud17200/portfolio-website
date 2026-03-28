@@ -1,25 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "/src/css/myProjects.css";
-import "animate.css";
-import "animate.css/animate.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import projects from "../../data/projects-api";
 import { Link } from "react-router-dom";
 
 export default function MyProjects() {
   const [activeId, setActiveId] = useState();
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
     <div className="projects">
       <div className="container-fluid top-titles">
         <p
-          style={{ animationDelay: ".4s" }}
-          className="dot mini-title wow animate__animated animate__fadeInUp"
+          className="dot mini-title fade-down-custom"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="400"
         >
           [01] - Featured projects
         </p>
         <h1
-          style={{ animationDelay: ".6s" }}
-          className="wow animate__animated animate__fadeInUp"
+          className="fade-up-custom"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="400"
         >
           I blend creativity with technical expertise
         </h1>
@@ -29,9 +41,15 @@ export default function MyProjects() {
           <div className="row g-0">
             {projects.map((project) => {
               return (
-                <div key={project.id} className="col-lg-6 col-md-6 col-sm-12">
+                <div
+                  className="col-lg-6 col-md-6 col-sm-12 fade-up-custom"
+                  key={project.id}
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="300"
+                >
                   <div
-                    className={`project-card wow animate__animated animate__fadeInDown ${
+                    className={`project-card  ${
                       activeId === project.id ? "active-preview" : ""
                     }`}
                   >
