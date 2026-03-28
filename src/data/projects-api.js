@@ -21,8 +21,8 @@ const projects = [
     },
 
     links: {
-      live: "https://your-live-demo-link.com",
-      github: "https://github.com/yourusername/portfolio",
+      live: "https://portfolio-website-lovat-nu-95.vercel.app/",
+      github: "https://github.com/Mahmoud17200/portfolio-website",
     },
   },
   // ecommerce-store
@@ -50,7 +50,7 @@ const projects = [
       live: "https://e-commerce-website-three-eosin.vercel.app/",
       github: "https://github.com/Mahmoud17200/E-Commerce-website",
     },
-  }
+  },
   // {
   //   id: "weather-app",
   //   title: "Weather App",
