@@ -29,16 +29,16 @@ function ContactMe() {
   ]);
   let [socialIcon] = useState([
     {
-      src: "/public/icons/facebook.png",
+      src: "/icons/facebook.png",
     },
     {
-      src: "/public/icons/instagram.png",
+      src: "/icons/instagram.png",
     },
     {
-      src: "/public/icons/linkedin.png",
+      src: "/icons/linkedin.png",
     },
     {
-      src: "/public/icons/github.png",
+      src: "/icons/github.png",
     },
   ]);
   return (
