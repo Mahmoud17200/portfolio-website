@@ -56,18 +56,21 @@ export default function MyProjects() {
                     <div className="card-body">
                       <div className="top">
                         <h3>{project.title}</h3>
-                        <span
-                          onClick={() =>
-                            setActiveId(
-                              activeId === project.id ? null : project.id,
-                            )
-                          }
-                          className="quick-preview d-flex"
-                        >
-                          <img src="/icons/tap-icon.png" alt="" />
-                        </span>
+                        {project.preview === false ? null : (
+                          <span
+                            onClick={() =>
+                              setActiveId(
+                                activeId === project.id ? null : project.id,
+                              )
+                            }
+                            className="quick-preview d-flex"
+                          >
+                            {console.log(project.id, project.preview)}
+                            <img src="/icons/tap-icon.png" alt="" />
+                          </span>
+                        )}
                       </div>
-                      <p>{project.category}</p>
+                      <p>{project.summary.slice(0 , 90)}...</p>
                       <div className="tech-tools">
                         {project.technologies.core.map((tech) => (
                           <button className="btn" key={tech}>

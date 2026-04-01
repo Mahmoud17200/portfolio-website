@@ -1,30 +1,4 @@
 const projects = [
-  // portfolio
-  {
-    id: "portfolio",
-    title: "Personal Portfolio",
-    category: "Portfolio Website",
-    status: "in-progress",
-    featured: true,
-
-    summary:
-      "A modern portfolio website showcasing projects, skills, and frontend expertise.",
-
-    technologies: {
-      core: ["HTML", "CSS", "Bootstrap", "React"],
-      stateManagement: null,
-    },
-
-    media: {
-      thumbnail: "/imgs/portfolio-pic2.png",
-      gallery: [],
-    },
-
-    links: {
-      live: "https://portfolio-website-lovat-nu-95.vercel.app/",
-      github: "https://github.com/Mahmoud17200/portfolio-website",
-    },
-  },
   // ecommerce-store
   {
     id: "ecommerce-store",
@@ -51,31 +25,59 @@ const projects = [
       github: "https://github.com/Mahmoud17200/E-Commerce-website",
     },
   },
-  // {
-  //   id: "weather-app",
-  //   title: "Weather App",
-  //   category: "API Integration",
-  //   status: "completed",
-  //   featured: false,
+  // weather-app
+  {
+    id: "weather-app",
+    title: "Weather App",
+    category: "API Integration",
+    status: "completed",
+    featured: false,
+    preview:false,
 
-  //   summary:
-  //     "A real-time weather forecasting app using external API integration with dynamic UI updates.",
+    summary:
+      "A real-time weather forecasting app using external API integration with dynamic UI updates.",
 
-  //   technologies: {
-  //     core: ["HTML", "CSS", "Bootstrap", "React"],
-  //     stateManagement: null,
-  //   },
+    technologies: {
+      core: ["HTML", "CSS", "Bootstrap", "React"],
+      stateManagement: null,
+    },
 
-  //   media: {
-  //     thumbnail: "/imgs/thumbnil-img.png",
-  //     gallery: [],
-  //   },
+    media: {
+      thumbnail: "/imgs/weather-pic.png",
+      gallery: [],
+    },
 
-  //   links: {
-  //     live: "https://your-live-demo-link.com",
-  //     github: "https://github.com/yourusername/weather-app",
-  //   },
-  // },
+    links: {
+      live: "https://weather-app-deploy-rose.vercel.app/",
+      github: "https://github.com/Mahmoud17200/weather-app-deploy",
+    },
+  },
+  // portfolio
+  {
+    id: "portfolio",
+    title: "Personal Portfolio",
+    category: "Portfolio Website",
+    status: "in-progress",
+    featured: true,
+
+    summary:
+      "A modern portfolio website showcasing projects, skills, and frontend expertise.",
+
+    technologies: {
+      core: ["HTML", "CSS", "Bootstrap", "React"],
+      stateManagement: null,
+    },
+
+    media: {
+      thumbnail: "/imgs/portfolio-pic2.png",
+      gallery: [],
+    },
+
+    links: {
+      live: "https://portfolio-website-lovat-nu-95.vercel.app/",
+      github: "https://github.com/Mahmoud17200/portfolio-website",
+    },
+  },
   // {
   //   id: "prayer-times",
   //   title: "Prayer Times App",

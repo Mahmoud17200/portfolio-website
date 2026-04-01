@@ -102,9 +102,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom:10px;
 }
 .projects .project-sec .project-card .card-body .top .quick-preview {
-  padding: 8px;
+  padding: 6px;
   background-color: #ffffff;
   border-radius: 50px;
   z-index: 100;
@@ -116,7 +117,7 @@
 }
 
 .projects .project-sec .project-card .card-body .top img {
-  width: 24px;
+  width: 20px;
 }
 .projects .project-sec .project-card .card-body .top .quick-preview .text {
   margin-right: 8px;

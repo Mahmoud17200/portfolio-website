@@ -28,8 +28,8 @@ function ProjectsPage() {
             [01] - Featured projects
           </p>
           <h1
-            className="fade-up-custom"
-            data-aos="fade-up"
+            className="fade-down-custom"
+            data-aos="fade-down"
             data-aos-duration="1200"
             data-aos-delay="300"
           >
@@ -43,8 +43,8 @@ function ProjectsPage() {
                 return (
                   <div
                     key={project.id}
-                    className="m-auto mb-lg-4 mb-lg-3 mb-sm-2 col-lg-8 col-md-8 col-sm-12 fade-down-custom"
-                    data-aos="fade-down"
+                    className="m-auto mb-lg-4 mb-lg-3 mb-sm-2 col-lg-8 col-md-8 col-sm-12 fade-up-custom"
+                    data-aos="fade-up"
                     data-aos-duration="1200"
                     data-aos-delay="300"
                   >
@@ -54,18 +54,20 @@ function ProjectsPage() {
                       <div className="card-body">
                         <div className="top">
                           <h3>{project.title}</h3>
-                          <span
-                            onClick={() =>
-                              setActiveId(
-                                activeId === project.id ? null : project.id,
-                              )
-                            }
-                            className="quick-preview d-flex"
-                          >
-                            <img src="/icons/tap-icon.png" alt="" />
-                          </span>
+                          {project.preview === false ? null : (
+                            <span
+                              onClick={() =>
+                                setActiveId(
+                                  activeId === project.id ? null : project.id,
+                                )
+                              }
+                              className="quick-preview d-flex"
+                            >
+                              <img src="/icons/tap-icon.png" alt="" />
+                            </span>
+                          )}
                         </div>
-                        <p>{project.category}</p>
+                        <p>{project.summary}</p>
                         <div className="tech-tools">
                           {project.technologies.core.map((tech) => (
                             <button className="btn" key={tech}>

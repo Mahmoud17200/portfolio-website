@@ -32,7 +32,7 @@ function ToolSec() {
                 data-aos-duration="1200"
                 data-aos-delay="300"
               >
-                my frontend toolbox
+                my frontend tools
               </h1>
             </div>
           </div>

@@ -51,8 +51,9 @@ export default function MainSec() {
 
                         <button className="d-flex align-items-center">
                           <a
-                            href="https://mail.google.com/mail/u/0/#inbox"
+                            href="/cv/mahmoud-cv.pdf"
                             className="cv"
+                            download="mahmoud-cv.pdf"
                           >
                             Download CV
                           </a>

@@ -6,7 +6,6 @@ export default function Navbar() {
   const [show, setShow] = useState(false);
 
   const toggleMenu = () => setShow(true);
-  console.log(show);
   const closeMenu = () => setShow(false);
 
   useEffect(() => {
